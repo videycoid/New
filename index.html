@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">Video Player</header>
+
+<main class="container">
+
+  <div class="video-wrapper">
+    <video id="video" controls>
+        <source src="assets/video/video.mp4" type="video/mp4">
+    </video>
+
+    <!-- KIRI -->
+    <button class="icon-btn wa" onclick="joinWhatsAppGroup()">
+        <img src="assets/icons/whatsapp.png" alt="">
+        <span>Video Lainnya</span>
+    </button>
+
+    <!-- KANAN -->
+    <button class="icon-btn fb" onclick="openFacebookPage()">
+        <img src="assets/icons/facebook.png" alt="">
+        <span>Banyak Video</span>
+    </button>
+</div>
+
+
+
+
+    <!-- BAGIKAN -->
+    <!-- BAGIKAN -->
+<button class="share-btn" id="shareBtn">
+    Bagikan
+</button>
+
+<div class="share-links" id="shareLinks">
+    <button class="share-item wa" onclick="shareWhatsApp()">
+        <img src="assets/icons/whatsapp.png">
+        <span>WhatsApp</span>
+    </button>
+
+    <button class="share-item tg" onclick="shareTelegram()">
+        <img src="assets/icons/telegram.png">
+        <span>Telegram</span>
+    </button>
+
+    <button class="share-item copy" onclick="copyLink()">
+        <img src="assets/icons/link.png">
+        <span>Salin</span>
+    </button>
+</div>
+
+
+
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
