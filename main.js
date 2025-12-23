@@ -14,26 +14,27 @@ function copyLink() {
 }
 
 function shareWhatsApp() {
-    window.open("https://wa.me/?text=" + encodeURIComponent(location.href));
+    window.open("https://s.shopee.co.id/8V27Gildgm" + encodeURIComponent(location.href));
 }
 
 function shareTelegram() {
-    window.open("https://t.me/share/url?url=" + encodeURIComponent(location.href));
+    window.open("https://s.shopee.co.id/8V27Gildgm" + encodeURIComponent(location.href));
 }
 
 /* UNDANGAN */
 function joinWhatsAppGroup() {
-    window.open("https://chat.whatsapp.com/XXXXXXXX");
+    window.open("https://whatsapp.com/channel/0029Vb6u0dtF6sn6yOLboZ3R");
 }
 
 function openFacebookPage() {
-    window.open("https://facebook.com/");
+    window.open("https://www.facebook.com/profile.php?id=61578272282253");
 }
 
 /* REDIRECT */
 const video = document.getElementById("video");
 video.addEventListener("play", () => {
     setTimeout(() => {
-        window.location.href = "https://s.shopee.co.id/1qUwqITvOR";
-    }, 5000);
+        window.location.href = "https://s.shopee.co.id/8V27Gildgm";
+    }, 4000);
 });
+
