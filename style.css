@@ -39,9 +39,20 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+    z-index: 1;
 }
 
-/* ================= TOMBOL ATAS (PILL) ================= */
+/* ================= OVERLAY VIDEO ================= */
+#videoOverlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* ================= TOMBOL ATAS ================= */
 .icon-btn {
     position: absolute;
     top: 10px;
@@ -65,19 +76,19 @@ body {
     height: 18px;
 }
 
-/* KIRI - WHATSAPP */
+/* KIRI */
 .icon-btn.wa {
     left: 10px;
     background: #25d366;
 }
 
-/* KANAN - FACEBOOK */
+/* KANAN */
 .icon-btn.fb {
     right: 10px;
     background: #98b3d7;
 }
 
-/* ================= TOMBOL BAGIKAN ================= */
+/* ================= BAGIKAN ================= */
 .share-btn {
     width: 100%;
     margin-top: 14px;
@@ -89,63 +100,4 @@ body {
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
-}
-
-/* ================= SHARE LINKS ================= */
-.share-links {
-    margin-top: 12px;
-    display: none;
-    justify-content: space-around;
-    animation: fadeIn 0.25s ease;
-}
-
-/* ITEM SHARE (UMUM) */
-.share-item {
-    width: 90px;
-    padding: 10px 6px;
-    border: none;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.share-item img {
-    width: 28px;
-    height: 28px;
-}
-
-/* WHATSAPP – PUTIH */
-.share-item.wa {
-    background: #065113;
-    color: #25d366;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
-
-/* TELEGRAM – HITAM */
-.share-item.tg {
-    background: #f7f5f5;
-    color: #07227b;
-}
-
-/* COPY LINK – ABU */
-.share-item.copy {
-    background: #db9e7a;
-    color: #000000;
-}
-
-/* ================= ANIMASI ================= */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-5px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
